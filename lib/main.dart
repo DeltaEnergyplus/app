@@ -23,8 +23,9 @@ class Delta extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => GetMaterialApp(
+        themeMode: ThemeMode.dark,
         debugShowCheckedModeBanner: false,
-        initialRoute: NavigationRoutes.main,
+        initialRoute: NavigationRoutes.authRoute,
         getPages: NavigationPages.getPages(),
       );
 }
